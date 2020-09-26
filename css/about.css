@@ -1,0 +1,25 @@
+h1 {
+  font-family: var(--header-font);
+  margin: 40px;
+}
+img {
+  width: 100%;
+  clip-path: ellipse(100% 50% at 0% 50%);
+}
+p {
+  padding: 25px;
+  border-radius: 25px;
+  background-color: var(--second-transparent);
+  transition: .5s;
+}
+
+.row {
+  align-items: center;
+}
+
+/* Smaller Screens */
+@media only screen and (max-width: 990px) {
+  p {
+    margin: 40px;
+  }
+}

@@ -2,8 +2,10 @@
 --main-color: #620041;
 --off-main: #4f0235;
 --second-color: #013a6e;
+--second-transparent: rgba(1, 58, 110, 0.6);
 --off-white: #fbf7e0;
 --off-black: #3b3932;
+--header-font: cursive;
 }
 /* Navbar Customization */
 .bg-custom {
@@ -24,7 +26,7 @@
 }
 .navbar-dark .navbar-brand {
   color: var(--off-white) !important;
-  font-family: cursive;
+  font-family: var(--header-font);
 }
 
 /* Body Customization */
@@ -59,13 +61,13 @@ body {
   top: 35px;
   left: 35px;
   padding: 25px;
-  background-color: rgba(1, 58, 110, 0.6); /* secondary color */
+  background-color: var(--second-transparent);
   border-radius: 25px;
   transition-duration: .5s;
 }
 .main-image .main-header {
   /* margin-bottom: 50px; */
-  font-family: cursive;
+  font-family: var(--header-font);
   text-align: right;
 }
 .main-header p {
@@ -88,6 +90,7 @@ body {
 
 .row {
   float: center;
+  justify-content: center;
   /* align-items: center; */
   /* padding: 10px; */
 }
