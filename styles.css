@@ -1,0 +1,116 @@
+:root {
+--main-color: #620041;
+--off-main: #4f0235;
+--second-color: #013a6e;
+--off-white: #fbf7e0;
+--off-black: #3b3932;
+}
+/* Navbar Customization */
+.bg-custom {
+  background-color: var(--main-color);
+}
+.nav-item,
+.nav-link {
+  border-radius: 5px;
+  transition-duration: .5s;
+}
+.active {
+  background-color: var(--off-main);
+}
+.nav-link:hover {
+  background-color: var(--off-main);
+  box-shadow: 2px 2px 5px black;
+  transition-duration: .5s;
+}
+.navbar-dark .navbar-brand {
+  color: var(--off-white) !important;
+  font-family: cursive;
+}
+
+/* Body Customization */
+body {
+  color: var(--off-black);
+  background: var(--off-white);
+}
+.main-container {
+  /* padding: 35px; */
+  width: 90%;
+}
+
+.main-image {
+  /* height: 10%; */
+  /* width: 100%; */
+  position: relative;
+  text-align: center;
+  /* overflow: hidden; */
+}
+.main-image img {
+  float: left;
+  width: 100%;
+  clip-path: ellipse(62% 38% at 36% 30%);
+  shape-outside: polygon(0 0, 100% 0, 100% 60%, 0 60%);
+}
+.main-image .main-body {
+  /* width: 45%; */
+  color: var(--off-white);
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  top: 35px;
+  left: 35px;
+  padding: 25px;
+  background-color: rgba(1, 58, 110, 0.6); /* secondary color */
+  border-radius: 25px;
+  transition-duration: .5s;
+}
+.main-image .main-header {
+  /* margin-bottom: 50px; */
+  font-family: cursive;
+  text-align: right;
+}
+.main-header p {
+  font-size: 1.25em;
+}
+.main-image .main-link {
+  padding: 10px;
+  margin: 15px;
+  background-color: var(--off-main);
+  color: var(--off-white);
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px black;
+  transition-duration: .5s;
+  text-decoration: none;
+}
+.main-image .main-link:hover {
+  box-shadow: 8px 8px 5px black;
+  transition-duration: .5s;
+}
+
+.row {
+  float: center;
+  /* align-items: center; */
+  /* padding: 10px; */
+}
+.main-text {
+  line-height: 1.7em;
+  font-size: 19px;
+  font-style: oblique;
+  /* padding: 25px; */
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--off-white);
+    background: var(--off-black);
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .main-image .main-body {
+    position: absolute;
+    align-items: center;
+    top: 200px;
+    left: 35px;
+  }
+}
