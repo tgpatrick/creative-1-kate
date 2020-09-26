@@ -95,7 +95,6 @@ body {
   line-height: 1.7em;
   font-size: 19px;
   font-style: oblique;
-  /* padding: 25px; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -105,12 +104,26 @@ body {
   }
 }
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
+/* Smaller Screens */
+@media only screen and (max-width: 730px) {
   .main-image .main-body {
     position: absolute;
     align-items: center;
-    top: 200px;
+    top: 350px;
     left: 35px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .main-image .main-body {
+    top: 200px;
+  }
+}
+/* Larger Screens */
+@media only screen and (min-width: 900px) {
+  .main-image .main-body {
+    font-size: 1.5em;
+  }
+  .main-image .main-body h1 {
+    font-size: 2em;
   }
 }
