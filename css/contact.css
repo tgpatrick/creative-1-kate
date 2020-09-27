@@ -4,18 +4,26 @@
   border-bottom: 2px solid var(--main-color);
 } */
 img {
-  width: 100%;
-  clip-path: ellipse(100% 50% at 0% 50%);
+  background-color: var(--off-white);
+  width: 25px;
+  border-radius: 5px;
+  margin: 10px;
 }
-.col-lg p {
-  padding: 25px;
-  margin: 25px;
-  border-radius: 25px;
-  background-color: var(--second-trans-light);
-  transition: .5s;
+.main-container {
+  align-items: center;
 }
 .row {
   align-items: center;
+  padding: 10px;
+}
+.contact-box {
+  padding: 25px;
+  border-radius: 25px;
+  background-color: var(--second-trans-light);
+}
+.contact-box p {
+  margin-top: 45px;
+  text-align: center;
 }
 
 .footer {
@@ -24,14 +32,7 @@ img {
 }
 
 @media (prefers-color-scheme: dark) {
-  .col-lg p {
+  .contact-box {
     background-color: var(--second-transparent);
-  }
-}
-
-/* Smaller Screens */
-@media only screen and (max-width: 990px) {
-  col-lg p {
-    margin: 40px;
   }
 }
