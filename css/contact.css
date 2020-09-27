@@ -14,8 +14,6 @@ img {
 .contact-box {
   text-align: center;
   padding: 15px;
-  border-radius: 25px;
-  background-color: var(--second-trans-light);
 }
 .button {
   margin: 35px;

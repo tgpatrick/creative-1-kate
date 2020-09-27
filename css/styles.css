@@ -111,8 +111,12 @@ a {
   padding: 20px;
   margin: 10px;
   padding-bottom: 5px;
-  border-radius: 25px;
   text-align: center;
+}
+
+.blue-box {
+  border-radius: 25px;
+  border: 1px solid var(--off-black);
   background-color: var(--second-trans-light);
   transition: .5s;
 }
@@ -129,6 +133,10 @@ a {
     border-bottom: 2px solid var(--off-white);
   }
   .footer {
+    background-color: var(--second-transparent);
+  }
+  .blue-box {
+    border: 1px solid var(--off-white);
     background-color: var(--second-transparent);
   }
 }

@@ -5,9 +5,6 @@ img {
 .col-lg p {
   padding: 25px;
   margin: 25px;
-  border-radius: 25px;
-  background-color: var(--second-trans-light);
-  transition: .5s;
 }
 .row {
   align-items: center;
