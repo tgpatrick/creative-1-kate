@@ -91,7 +91,12 @@ a {
 
 .row {
   width: 100%;
+  margin: auto;
   float: center;
+  justify-content: center;
+}
+.link-row {
+  display: flex;
   justify-content: center;
 }
 .main-text {
@@ -108,6 +113,8 @@ a {
 .footer {
   position: absolute;
   top: 120%;
+  right: 0;
+  left: 0;
   padding: 20px;
   margin: 10px;
   padding-bottom: 5px;
